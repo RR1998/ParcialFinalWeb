@@ -24,7 +24,7 @@ function AeropuertosA(){
     });
 }
 
-AeropuertosA();//falta el formulario
+AeropuertosA();
 document.forms.FormRegistrar = addEventListener("submit", function(e){
     e.preventDefault();
     var data = {
