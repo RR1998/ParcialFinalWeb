@@ -11,7 +11,7 @@
         <div class="col-m-6 offset-md-3">
             <div class = "card">
                 <div class = "card-header bg-success text-whit">
-                    Administrador Aeropuerto
+                    <center><h1>Administrador Aeropuerto</h1></center>
                 </div>
                 <div class = "card-body">
                     <form method = "POST" name = "FormRegistrar" id="FormRegistrar">
@@ -39,8 +39,20 @@
 
     <div class = "model fade" id="example model" tab index = "-1" role = "dialog" aria-labelledby="exammpleModellabel" aria-hidden="true">
         <div class="model-header">
-            <h5 class = "model-tittle"></h5>
+            <h5 class = "model-tittle">actualizar</h5>
+            <button type="button" class ="close" data-dismiss="model" aria-label="close">
         </div>
+        <form action ="" method="POST" name = "formUpdate">
+            <div class="model-body">
+                <input type= "text" name = "AeropuertoNameU" class ="form-control mt-1">
+                <input type= "text" name = "UbicacionU" class = "form-control mt-1">
+                <input type= "text" name = "Terminales" class = "form-control mt-1">
+            </div>
+            <div class = "model-footer">
+                <button type ="button" class = "btn btn-secundary" data-dismiss="model">close</button>
+                <button type = "submit" value = "actualizar" class = "btn btn-primary">actualizar</button>
+            </div>
+        </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
