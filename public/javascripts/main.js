@@ -24,8 +24,8 @@ function AeropuertosA(){
     });
 }
 
-AeropuertosA();//falata el formulario
-document.forms = addEventListener("submit", function(e){
+AeropuertosA();//falta el formulario
+document.forms.FormRegistrar = addEventListener("submit", function(e){
     e.preventDefault();
     var data = {
          AeropuertoName: document.querySelector("#AeropuertoName").value,
@@ -37,7 +37,8 @@ document.forms = addEventListener("submit", function(e){
     fetch(URL, {
         headers:{
             'content-type': 'Aplication/json'
-        }
-        metoth: "POST"
-    })
+        },
+        metoth: "POST",
+        body: JSON.stringify(data),
+    }).then(res => res.json()).catch(err=>console.log(err)).then(response => {alert + "insertado con exito"})
 });

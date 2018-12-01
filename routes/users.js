@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.router();
+const AeropuertoController = require('../controllers/AeropuertoController');
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
 
+router.get('/', AeropuertoController.index);
+router.update('/id', AeropuertoController.update);
+router.delete('/id', AeropuertoController.delete);
 module.exports = router;
